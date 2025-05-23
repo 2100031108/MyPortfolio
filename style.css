@@ -1,0 +1,181 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('OIP.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 150%; /* Adjust this percentage or use px for size */
+}
+
+/* Header and navbar */
+header {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #cccccc;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+  border-bottom: 2px solid #00c6ff;
+}
+
+/* Section styling */
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+  flex: 1;
+}
+
+/* Profile image */
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffffff;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Text and layout */
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #dddddd;
+}
+
+/* Skills, Projects, etc. */
+.skills-list, ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+  color: #dddddd;
+}
+
+.skills-list li,
+ul li,
+.project p {
+  margin-bottom: 0.75rem;
+}
+
+.project {
+  background: rgba(255, 255, 255, 0.08);
+  margin: 1rem auto;
+  padding: 1rem;
+  max-width: 600px;
+  border-radius: 10px;
+  color: #dddddd;
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.1rem;
+  color: #dddddd;
+}
+
+/* Responsive styles for tablets and phones */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  header h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .about-content p {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .profile-image {
+    width: 90px;
+    height: 90px;
+    margin: 15px auto;
+  }
+
+  .project {
+    max-width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+
+  body {
+    background-size: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-content p,
+  .skills-list,
+  ul {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  nav ul {
+    gap: 0.8rem;
+  }
+
+  header {
+    padding: 0.8rem 1rem;
+  }
+}
